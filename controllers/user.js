@@ -13,7 +13,7 @@ module.exports = {
             .populate('thoughts')
             .populate('friends')
             .then((user) =>
-                !user ? res.status(404).json({ message: 'No user with that ID' }) : res.json(user)
+                !user ? res.status(404).json({ message: 'bad ID' }) : res.json(user)
             )
             .catch((err) => res.status(500).json(err));
     },
@@ -31,7 +31,7 @@ module.exports = {
             { runValidators: true, new: true }
         )
             .then((user) =>
-                !user ? res.status(404).json({ message: 'No user with this ID' }) : res.json(user)
+                !user ? res.status(404).json({ message: 'bad ID' }) : res.json(user)
             )
             .catch((err) => res.status(500).json(err));
     },
@@ -39,7 +39,7 @@ module.exports = {
     deleteUser(req, res) {
         User.findOneAndDelete({ _id: req.params.userId })
             .then((user) =>
-                !user ? res.status(404).json({ message: 'No user with that ID' }) : Thought.deleteMany({ _id: { $in: user.thoughts } })
+                !user ? res.status(404).json({ message: 'bad ID' }) : Thought.deleteMany({ _id: { $in: user.thoughts } })
             )
             .then(() => res.json({ message: 'deleted' }))
             .catch((err) => res.status(500).json(err));
@@ -52,7 +52,7 @@ module.exports = {
             { runValidators: true, new: true }
         )
             .then((user) =>
-                !user ? res.status(404).json({ message: 'No user with this ID' }) : res.status(200).json(user)
+                !user ? res.status(404).json({ message: 'bad ID' }) : res.status(200).json(user)
             )
             .catch((err) => res.status(500).json(err));
     },
@@ -64,7 +64,7 @@ module.exports = {
             { runValidators: true, new: true }
         )
             .then((user) =>
-                !user ? res.status(404).json({ message: 'No user with this ID' }) : res.json(user)
+                !user ? res.status(404).json({ message: 'bad ID' }) : res.json(user)
             )
             .catch((err) => res.status(500).json(err));
     },
