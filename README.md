@@ -17,11 +17,11 @@
  <br>
  caption: screen shots of insomnia below
  <br>
- ![<img src="insomnia1.jpeg" width="250"/>](images/insomnia1.jpeg)
+ ![<img src="insomnia1.jpeg" width="250"/>](images/insomnia1)
  <br>
- ![<img src="insomnia2.jpeg" width="250"/>](images/insomnia2.jpeg)
+ ![<img src="insomnia2.jpeg" width="250"/>](images/insomnia2)
  <br>
- ![<img src="insomnia3.jpeg" width="250"/>](images/insomnia3.jpeg)
+ ![<img src="insomnia3.jpeg" width="250"/>](images/insomnia3)
  <br>
  ## License 
  MIT License 
