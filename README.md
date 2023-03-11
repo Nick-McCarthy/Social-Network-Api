@@ -12,15 +12,17 @@
  - [Test](#test) 
  - [Questions](#questions) 
  ## Installation 
- Filler
+ Entirly backend, run node server.js and view routes in insomnia
  ## Usage 
- Filler
  <br>
- caption: 
+ caption: screen shots of insomnia below
  <br>
- ![<img src="" width="250"/>](images/)
+ ![<img src="insomnia1.jpeg" width="250"/>](images/insomnia1.jpeg)
  <br>
-
+ ![<img src="insomnia2.jpeg" width="250"/>](images/insomnia2.jpeg)
+ <br>
+  ![<img src="insomnia3.jpeg" width="250"/>](images/insomnia3.jpeg)
+ <br>
  ## License 
  MIT License 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
